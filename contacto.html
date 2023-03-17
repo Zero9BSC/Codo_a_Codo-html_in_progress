@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina</title>
+    <link rel="shortcut icon" href=".\img\pngwing.com.ico" type="image/x-icon">
+
+</head>
+
+<body bgcolor="#FFFF7">
+    <header>
+        <!-- Imagen -->
+        <img src=".\img\slide.jfif" alt="vista_aerea_buenos_aires" width="100%">
+
+        <nav>
+            <a href=".\index.html">Inicio |</a>
+            <a href=".\contacto.html">Contacto |</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulario de Contacto</h1>
+        <form action="">
+            <fieldset>
+                <legend><b>Datos Personales</b></legend>
+                <br><br>
+                <!-- Nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" maxlength="30" required>
+                <br><br>
+                <!-- Apellido -->
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" maxlength="20" required>
+                <br><br>
+                <!-- DNI -->
+                <label for="dni">DNI:</label>
+                <input type="number" name="dni" id="dni" placeholder="XX.XXX.XXX" maxlength="8" required>
+                <br><br>
+                <!-- Nro de Tamite -->
+                <label for="nro_tramite">Nro de Tramite DNI</label>
+                <input type="number" name="nro_tramite" id="nro_tramite" placeholder="Ingrese nro de Tramite" required>
+                <br><br>
+                <!-- Hijos -->
+                <label for="hijos">Nro de Hijos (o a 10)</label>
+                <input type="number" min="0" max="10" required>
+                <br><br>
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com" required>
+                <br><br>
+                <!-- Fecha de Nacimiento -->
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input type="date" min="2018-01-01" max="2018-12-31" required>
+                <br><br>
+                <!-- Adjuntar imagen -->
+                <label for="foto">Adjunte archivo:</label>
+                <input type="file">
+                <br><br>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend><b>Datos para la inscripcion</b></legend>
+                <br><br>
+                <!-- Turno -->
+                <label for="turno">Seleccione su turno de preferencia:</label>
+                <select name="turno" id="turno">
+                    <option value="vacio">Selecione</option>
+                    <option value="1" selected>Mañana</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Vespertino</option>
+                    <option value="4">Noche</option>
+                </select>
+                <br><br>
+                <!-- Conocimientos, Checkbox para varias opciones -->
+                <label for="conocimientos">Conocimientos Previos: </label>
+                <input type="checkbox" name="conocimientos" id="html"> HTML
+                <input type="checkbox" name="conocimientos" id="css"> CSS
+                <input type="checkbox" name="conocimientos" id="js"> JS
+                <br><br>
+                <!-- Interes, Radio para 1 sola opcion -->
+                <label for="interes">Tengo interes en...</label>
+                <input type="radio" name="interes" id="1">FullStack - Python
+                <input type="radio" name="interes" id="2">FullStack - JAVA
+                <input type="radio" name="interes" id="3">FullStack - PHP
+                <input type="radio" name="interes" id="4">Diseño UX/UI
+            </fieldset>
+                <br><br>
+                <label for="comentarios">Comentarios: </label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="90" rows="5" placeholder="Deje aqui sus comentarios: "></textarea>
+                <br><br>
+                <input type="submit" name="enviar_formulario">
+                <input type="reset" name="borrar_formulario">
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
